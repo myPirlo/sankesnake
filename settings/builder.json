@@ -1,0 +1,58 @@
+{
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "appKey": "",
+  "appSecret": "",
+  "encryptJs": true,
+  "excludeScenes": [
+    "54de3c84-52fa-4b60-937d-dc0d4cc5c0d5",
+    "2d2f792f-a40c-49bb-a189-ed176a246e49",
+    "934bc490-0b21-4594-9f84-b0c0b666f461",
+    "b393f67c-0019-42c1-8b53-60a75fa0cb60",
+    "466e1b60-7e6a-4c56-858b-41c81e27eb50",
+    "00a5d36d-b85a-4fd3-a95c-ab14aa19df8a",
+    "3d005792-af96-4bdb-86df-155a7533fd2e",
+    "743b8213-ffe6-4302-acd1-60fa3b7ba3cf",
+    "f7e086a6-2b59-4ec6-86cb-2e752d60e9f2",
+    "16e08295-efa0-408a-a7f6-b3cf1e931567"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "startScene": "74f0d5d2-548e-4bfd-8fb8-242ed021804a",
+  "title": "wx_mini_game",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx264071f5e1dc90b2",
+    "isSubdomain": false,
+    "orientation": "portrait"
+  },
+  "xxteaKey": "a017c6bb-f42b-43",
+  "zipCompressJs": true
+}
