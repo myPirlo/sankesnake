@@ -12,8 +12,21 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        titleContent:cc.Node,
-        scoreList:cc.Node
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -23,29 +36,6 @@ cc.Class({
     start () {
 
     },
-
-    toMainScence(){
-        cc.director.loadScene('snake')
-    },
-    endShare(){
-        wx.shareAppMessage({
-            title: '我就是无聊死,也不会玩这个游戏！！！',
-            imageUrl:'http://webfdh.com/way-hero/1.jpg'
-        })
-    },
-    showScoreList(){
-        this.titleContent.active=false
-        this.scoreList.active=true
-    },
-    hideScoreList(){
-        this.titleContent.active=true
-        this.scoreList.active=false
-    },
-    toOther(){
-        wx.navigateToMiniProgram({
-            appId: 'wx7feef145b72f629b',
-        })
-    }
 
     // update (dt) {},
 });

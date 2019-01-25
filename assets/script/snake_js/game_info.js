@@ -23,6 +23,14 @@ cc.Class({
     onLoad() {
         let theScore = this.canvas.getComponent("snake_game").score;
         this.scoreLabel.string = "Score:" + theScore.toString();
+        if(theScore>0){
+            //如果有分数,就向子域中发送分数
+            const openDataContext = wx.getOpenDataContext()
+            openDataContext.postMessage({
+                score: theScore,
+                year: (new Date()).getFullYear()
+            })
+        }  
 
         //let globalNode = cc.director.getScene().getChildByName('gameUser').getComponent('game_user_js');
         //let bestScore = globalNode.userGameInfo.snakeBestScore || 0;
@@ -65,5 +73,11 @@ cc.Class({
 
     backToList() {
         cc.director.loadScene('snakeBanner');
+    },
+    endShare(){
+        wx.shareAppMessage({
+            title: '我就是无聊死,也不会玩这个游戏！！！',
+            imageUrl:'http://webfdh.com/way-hero/1.jpg'
+        })
     }
 });

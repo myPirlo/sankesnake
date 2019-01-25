@@ -97,4 +97,22 @@ cc.Class({
             this.snake.snakeMove();
         }
     },
+    // use this for initialization
+    start: function () {
+       
+        
+        
+    },
+    endShare(){
+        wx.shareAppMessage({
+            title: '我就是无聊死,也不会玩这个游戏！！！',
+            imageUrl:'http://webfdh.com/way-hero/1.jpg'           
+        })
+    }
 });
+
+
+
+    
+
+
