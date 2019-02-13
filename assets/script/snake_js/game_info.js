@@ -70,6 +70,9 @@ cc.Class({
             );
         }, this)
     },
+    watchVideo(){
+        D.videoLife()
+    },
 
     backToList() {
         cc.director.loadScene('snakeBanner');

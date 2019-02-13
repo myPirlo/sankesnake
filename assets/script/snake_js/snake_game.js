@@ -11,11 +11,13 @@ cc.Class({
             default: null,
             type: cc.Node
         },
-        tips:cc.Node
+        tips:cc.Node,
+        vedioBth:cc.Node
     },
 
     // use this for initialization
     onLoad() {
+        D.bannerDestory()
         // var tic = wx.getSystemInfoSync();
         // this.node.width = tic.windowWidth;
         // this.node.height = tic.windowHeight;
@@ -39,8 +41,13 @@ cc.Class({
     },
 
     showGameInfo(bool) {
+        if(D.getDay()=='2019112'||D.getDay()=='2019113'){
+            this.vedioBth.active=false
+        }
         this.gameInfo.active = bool;
         if (bool) {
+            
+           
             while(!this.infoShowOnce){
                 this.infoShowOnce = 1;
                 this.gameInfo.opacity = 0;

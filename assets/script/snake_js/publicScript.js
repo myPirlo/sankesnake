@@ -18,7 +18,9 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        D.bannerAdShow()
+    },
 
     start () {
 
